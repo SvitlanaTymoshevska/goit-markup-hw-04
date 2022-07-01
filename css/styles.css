@@ -70,9 +70,11 @@ address {
 }
 .site-nav {
     display: flex;
+    align-items: center;
 }
 .contacts {
     display: flex;
+    align-items: center;
     margin-left: auto;
 }
 .site-nav .item + .item,
@@ -81,12 +83,9 @@ address {
 }
 .site-nav .link,
 .contacts .link {
-    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-}
-.header .link {
-    color: var(--secondary-color);   
+    color: var(--secondary-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -96,8 +95,18 @@ address {
 .header .link.current {
     color: var(--accent-color);
 }
-.contacts .link {
-    color: var(--primary-color);    
+.contact.link {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);;  
+}
+.contact-icon {
+    margin-right: 10px;
+    fill: var(--primary-color);   
+}
+.contact:hover .contact-icon,
+.contact:focus .contact-icon {
+    fill: var(--accent-color);
 }
 .header {
     border-bottom: 1px solid #ECECEC;
