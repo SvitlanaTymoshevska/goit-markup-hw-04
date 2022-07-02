@@ -113,11 +113,13 @@ address {
 }
 
 /* Главное */
-.primary-section {
+.features-section,
+.team-section,
+.projects-section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.secondary-section {
+.works-section {
     padding-bottom: 94px;
 }
 .container {
@@ -129,7 +131,7 @@ address {
 }
 
 /* Главный герой */
-.hero {
+.hero-section {
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -147,7 +149,7 @@ address {
     background-position: center;
     background-size: cover;
 }
-.hero .title {
+.hero-section .title {
     margin-top: 0;
     margin-bottom: 30px;
     
@@ -218,9 +220,18 @@ address {
 }
 
 /* Команда */
+.team-section {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F5F4FA;
+}
 .team {
     font-size: 16px;
     line-height: 1.19;
+}
+.team .item {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .team .title {  
     margin-top: 0;
@@ -236,6 +247,29 @@ address {
 }
 .team p {
     margin-bottom: 0;
+}
+.socials {
+    display: flex;
+    margin: 16px 32px 0;
+    justify-content: space-between;
+}
+.social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;  
+}
+.social-icon {
+    fill: #AFB1B8;
+}
+.social-link:hover,
+.social-link:focus {
+    background-color: #2196F3;
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
+    fill: var(--white-color);
 }
 
 /* Проекты */
