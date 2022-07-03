@@ -231,7 +231,7 @@ address {
 
 /* Команда */
 .team-section {
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin-left: auto;
     margin-right: auto;
 
@@ -240,6 +240,8 @@ address {
 .team {
     font-size: 16px;
     line-height: 1.19;
+    
+    background-color: var(--white-color);
 }
 .team .item {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -289,10 +291,11 @@ address {
     flex-wrap: wrap;
 }
 .client-link {
-    display: block;
+    display: flex;
     width: 170px;
-    height: 84.5px;
-    padding: 14.7px 32px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -310,7 +313,7 @@ address {
     border-color: var(--accent-color);
 }
 .client-link:hover .client-icon,
-.client-link:focus .client-link{
+.client-link:focus .client-icon {
    fill: var(--accent-color);
 }
 
